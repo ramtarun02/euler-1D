@@ -5,8 +5,8 @@ int main() {
   simParams.domainLength = 1.0;
   simParams.CFL = 0.10;
   simParams.gamma = 1.4;
-  simParams.numPoints = 101;
-  simParams.endTime = 0.2;
+  simParams.numPoints = 501;
+  simParams.endTime = 0.1;
 
   euler1d::InitialCondition ic;
 

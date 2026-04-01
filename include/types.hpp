@@ -34,4 +34,4 @@ struct InitialCondition {
   double pRight = 0.1;
 };
 
-}  // namespace euler1d
+} // namespace euler1d
