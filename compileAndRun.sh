@@ -4,13 +4,9 @@
 rm -rf build
 mkdir build
 
-# Compile the solver into an object file
-g++ -std=c++17 -I. -c -O2 euler.cpp -o build/euler.o
-
-# Link object file into an executable
-g++ build/euler.o -o build/euler
+# Configure and compile modular solver
+cmake -S . -B build
+cmake --build build --target euler -j
 
 # Run the solver
-cd build
-./euler
-cd ..
+(cd build && ./euler)
